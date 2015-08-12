@@ -14,6 +14,7 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
 
     <%= stylesheet_link_tag "all" %>
+
     <%= javascript_include_tag  "all" %>
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,8 +46,8 @@
 
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <% link_to "/pricing.html" do %>
-                <i class="fa fa-dollar"></i> Pricing
+              <% link_to "/team.html" do %>
+                <i class="fa fa-users"></i> Team
               <% end %>
             </li>
             <li>
@@ -68,5 +69,42 @@
     </nav>
 
     <%= yield %>
+
+<div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class "col-xs-4">
+          <ul class="list-inline">
+            <li>
+              <a href="https://twitter.com/iceme">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com/iceme">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/iceme">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com/iceme">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+          
+          
+      
+      </div>
+    </div>
+  </div>
+
+
   </body>
 </html>
